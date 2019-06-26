@@ -48,5 +48,8 @@
   },
   "engines": {
     "node": "8.* || >= 10.*"
+  },
+  "dependencies": {
+    "bimplus-websdk": "0.0.87"
   }
 }
