@@ -1,0 +1,11 @@
+<h1>Projects</h1>
+
+{{#link-to 'index'}}
+  Back to Home
+{{/link-to}}
+
+<ul>
+  {{#each this.model as |project|}}
+    <li>{{project.name}}</li>
+  {{/each}}
+</ul>

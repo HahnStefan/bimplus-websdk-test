@@ -1,0 +1,24 @@
+<h1>Teams</h1>
+
+{{!-- {{#link-to 'index'}}
+  Back to Home
+{{/link-to}} --}}
+
+{{#link-to 'login'}}
+  Login/Logout
+{{/link-to}}
+<br>
+
+{{#link-to 'projects'}}
+  Projects
+{{/link-to}}
+<br>
+
+<h2>All teams</h2>
+<ul>
+  {{#each this.model as |team|}}
+    <li> {{#link-to "teams.team" team.slug}}{{team.displayname}}{{/link-to}}</li>
+    {{!-- <li> {{#link-to "teams.team"}}{{team.displayname}}{{/link-to}}</li> --}}
+
+  {{/each}}
+</ul>

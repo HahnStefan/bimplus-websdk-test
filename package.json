@@ -20,6 +20,7 @@
   "devDependencies": {
     "@ember/jquery": "^0.6.0",
     "@ember/optional-features": "^0.7.0",
+    "bimplus-websdk": "0.0.87",
     "broccoli-asset-rev": "^3.0.0",
     "ember-ajax": "^5.0.0",
     "ember-cli": "~3.10.1",
@@ -49,7 +50,5 @@
   "engines": {
     "node": "8.* || >= 10.*"
   },
-  "dependencies": {
-    "bimplus-websdk": "0.0.87"
-  }
+  "dependencies": {}
 }

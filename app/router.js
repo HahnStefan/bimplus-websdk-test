@@ -7,6 +7,12 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('login');
+  this.route('teams', function() {
+    this.route('team', { path: '/:team_slug' });
+//    this.route('team');
+  });
+  this.route('projects');
 });
 
 export default Router;

@@ -1,0 +1,16 @@
+{{outlet}}
+
+{{#if userIsLoggedIn}}
+  <button {{action 'logout'}}>Logout</button>
+  <br>
+{{else}}
+  <h1>Login Page</h1><br>
+  {{input value=loginName paceholder='Login'}}<br>
+  {{input value=password paceholder='Password' type='password'}}<br>
+  <button {{action 'authenticate'}}>Login</button>
+  <br>
+{{/if}}
+<br>
+{{#link-to 'index'}}
+  Back to Home
+{{/link-to}}

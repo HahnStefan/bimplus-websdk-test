@@ -3,6 +3,36 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+## Bimplus Web SDK
+Test of Bimplus Web SDK 
+https://doc.allplan.com/display/bimpluspublic/Bimplus+Web+SDK+Reference
+
+## Steps creating the test app
+
+* `Create new test project`
+> ember new bimplus-websdk-test
+
+* `Install bimplus websdk`
+> npm install bimplus-websdk
+
+* `Import the node module`
+for more information see:
+https://davidtang.io/2018/04/30/importing-from-node_modules-in-ember.html
+
+`  app.import('node_modules/bimplus-websdk/dist/bimplus-websdk.js', {`
+`    using: [`
+`      { transformation: 'amd', as: 'webapi' }`
+`    ]`
+
+* `Create a Ember login route and a login controller`
+> ember g route login
+> ember g controller login
+
+
+* `Requirements for websdk`
+To use this library you need to have installed these packages :
+jQuery min. ver. 1.12. https://jquery.com/
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
